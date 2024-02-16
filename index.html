@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello, Vue!</h1>
+
+    <div id="header1">
+      <p>{{ title }} -> {{ author }} ({{age}})</p>
+
+      <button v-on:click="age++">Increase age</button> <br />
+      <button v-on:click="age--">Increase age</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
