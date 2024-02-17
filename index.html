@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <h1>Hello, Vue!</h1>
+    <h1>Hello, Vue !</h1>
 
     <div id="header1">
       <p>{{ title }} -> {{ author }} ({{age}})</p>
@@ -53,6 +53,14 @@
       <div class="box" @mousemove="handleMouseMove">
         Position - {{ x }} , {{ y }}
       </div>
+
+      <li v-for="book in books">
+        <h3>{{ book.title }}</h3>
+        <p>{{ book.author }}</p>
+        <img :src="book.img" :alt="book.title" />
+      </li>
+
+      <a v-bind:href="url">Google</a>
     </div>
 
     <script src="app.js"></script>

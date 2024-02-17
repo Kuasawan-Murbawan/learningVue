@@ -12,6 +12,24 @@ const app = Vue.createApp({
       age: 45,
       x: 0,
       y: 0,
+      books: [
+        {
+          title: "name of the wind",
+          author: "patrick rothfuss",
+          img: "assets/1.jpg",
+        },
+        {
+          title: "the way of kings",
+          author: "brandon sanderson",
+          img: "assets/2.jpg",
+        },
+        {
+          title: "the final empire",
+          author: "brandon sanderson",
+          img: "assets/3.jpg",
+        },
+      ],
+      url: "https://www.google.com",
     };
   },
 
